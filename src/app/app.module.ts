@@ -8,6 +8,7 @@ import { ViewusdataComponent } from './viewusdata/viewusdata.component';
 import { ViewUserInfoComponent } from './view-user-info/view-user-info.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { ViewUserDataComponent } from './view-user-data/view-user-data.component';
+import { ViewToDoComponent } from './view-to-do/view-to-do.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ViewUserDataComponent } from './view-user-data/view-user-data.component
     ViewusdataComponent,
     ViewUserInfoComponent,
     ViewProductComponent,
-    ViewUserDataComponent
+    ViewUserDataComponent,
+    ViewToDoComponent
   ],
   imports: [
     BrowserModule,
