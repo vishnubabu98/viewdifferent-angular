@@ -10,6 +10,7 @@ import { ViewProductComponent } from './view-product/view-product.component';
 import { ViewUserDataComponent } from './view-user-data/view-user-data.component';
 import { ViewToDoComponent } from './view-to-do/view-to-do.component';
 import { ViewQuotesAppComponent } from './view-quotes-app/view-quotes-app.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ViewQuotesAppComponent } from './view-quotes-app/view-quotes-app.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
