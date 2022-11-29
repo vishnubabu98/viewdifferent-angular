@@ -7,6 +7,7 @@ import { ViewpassengerComponent } from './viewpassenger/viewpassenger.component'
 import { ViewusdataComponent } from './viewusdata/viewusdata.component';
 import { ViewUserInfoComponent } from './view-user-info/view-user-info.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { ViewUserDataComponent } from './view-user-data/view-user-data.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ViewProductComponent } from './view-product/view-product.component';
     ViewpassengerComponent,
     ViewusdataComponent,
     ViewUserInfoComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    ViewUserDataComponent
   ],
   imports: [
     BrowserModule,
