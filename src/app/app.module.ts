@@ -11,6 +11,39 @@ import { ViewUserDataComponent } from './view-user-data/view-user-data.component
 import { ViewToDoComponent } from './view-to-do/view-to-do.component';
 import { ViewQuotesAppComponent } from './view-quotes-app/view-quotes-app.component';
 import { HttpClientModule } from '@angular/common/http'
+import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:ViewProductComponent
+  },
+  {
+    path:"quote",
+    component:ViewQuotesAppComponent
+  },
+  {
+    path:"todo",
+    component:ViewToDoComponent
+  },
+  {
+    path:"userdata",
+    component:ViewUserDataComponent
+  },
+  {
+    path:"userinfo",
+    component:ViewUserInfoComponent
+  },
+  {
+    path:"pass",
+    component:ViewpassengerComponent
+  },
+  {
+    path:"usdata",
+    component:ViewusdataComponent
+  },
+]
 
 @NgModule({
   declarations: [
@@ -21,12 +54,14 @@ import { HttpClientModule } from '@angular/common/http'
     ViewProductComponent,
     ViewUserDataComponent,
     ViewToDoComponent,
-    ViewQuotesAppComponent
+    ViewQuotesAppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
