@@ -10,4 +10,8 @@ export class ServiceService {
   fetchCourses=()=>{
     return this.http.get("https://dummyjson.com/products")
   }
+  fetchData=()=>{
+    return this.http.get("https://dummyjson.com/quotes")
+  }
+
 }
