@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ViewpassengerComponent } from './viewpassenger/viewpassenger.component';
 import { ViewusdataComponent } from './viewusdata/viewusdata.component';
 import { ViewUserInfoComponent } from './view-user-info/view-user-info.component';
+import { ViewProductComponent } from './view-product/view-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ViewpassengerComponent,
     ViewusdataComponent,
-    ViewUserInfoComponent
+    ViewUserInfoComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,
